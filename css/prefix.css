@@ -1,0 +1,1351 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.dark * {
+  background-color: #333 !important;
+  color: #fff;
+}
+.dark .navbar * {
+  color: #fff;
+}
+.dark .home .home__content * {
+  color: #fff;
+}
+.dark .product .product__features * {
+  color: #fff;
+}
+.dark .product .product__title {
+  color: #fff;
+}
+.dark .management *,
+.dark .customer *,
+.dark .collaborative *,
+.dark .process *,
+.dark .strategies *,
+.dark .price *,
+.dark .clients *,
+.dark .join *,
+.dark .footer * {
+  color: #fff;
+}
+.dark .price .container .price__row .price__card:hover {
+  background-color: #02897a !important;
+}
+.dark .price .container .price__row .price__card:hover * {
+  background-color: #02897a !important;
+}
+.dark .price .container .price__row .price__card:hover .sign-up,
+.dark .price .container .price__row .price__card:hover .product .sign,
+.product .dark .price .container .price__row .price__card:hover .sign {
+  background-color: #fff !important;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.container {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.light-dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.light-dark img {
+  width: auto;
+}
+#backtop {
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#backtop img {
+  width: 30px;
+  height: 30px;
+}
+.sign {
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: 1px solid #02897a;
+}
+.sign-in {
+  border-color: #bcd0e5;
+}
+.sign-in:hover {
+  background-color: #02897a;
+  border-color: #02897a;
+  color: #fff;
+}
+.sign-up,
+.product .sign {
+  background-color: #02897a;
+  color: #fff;
+}
+.sign-up:hover,
+.product .sign:hover {
+  color: #02897a;
+  border-color: #bcd0e5;
+  background-color: #fff;
+}
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 19px 0;
+  width: 100%;
+  z-index: 999;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 16px;
+}
+.navbar__menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 16px;
+}
+.navbar__list a {
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  margin: 0 12px;
+}
+.navbar__list .link:hover {
+  color: #22343d;
+  font-weight: 600;
+}
+.navbar .toggle-btn {
+  display: none;
+}
+.navbar .sign-up,
+.navbar .product .sign,
+.product .navbar .sign {
+  color: #fff;
+}
+.navbar-shrink {
+  padding: 15px 0;
+  background-color: #000;
+  -webkit-box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, 0.2);
+          box-shadow: -2px 14px 8px 0px rgba(250, 247, 247, 0.2);
+}
+.home {
+  padding: 90px 0;
+  text-align: center;
+}
+.home .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 33px;
+}
+.home__bg {
+  width: 100%;
+}
+.home__title {
+  font: normal 700 32px/48px "Poppins";
+  margin-bottom: 18px;
+  color: #22343d;
+}
+.home__text {
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+}
+.home__btns {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.product {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+.product .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.product__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 96px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.product__title {
+  text-align: center;
+  font: normal 700 32px/48px "Poppins";
+  margin-bottom: 57px;
+  color: #22343d;
+}
+.product__features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.product .card {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 46px;
+}
+.product .card img {
+  margin-bottom: 30px;
+}
+.product .card h5 {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 15px;
+  color: #22343d;
+}
+.product .card p {
+  text-align: center;
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+}
+.product .sign {
+  width: 175px;
+}
+.management,
+.collaborative {
+  padding-top: 45px;
+  text-align: center;
+}
+.management .container,
+.collaborative .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 33px;
+}
+.management__bg,
+.collaborative__bg {
+  width: 100%;
+}
+.management__title,
+.collaborative__title {
+  font: normal 700 32px/48px "Poppins";
+  margin-bottom: 18px;
+  color: #22343d;
+  margin-bottom: 25px;
+}
+.management__text,
+.collaborative__text {
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  margin-bottom: 25px;
+}
+.management h5,
+.collaborative h5 {
+  font: normal 400 16px/28px "Poppins";
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.customer {
+  padding-top: 45px;
+}
+.customer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 33px;
+}
+.customer__bg {
+  width: 100%;
+}
+.customer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.customer h5 {
+  font-weight: 600;
+}
+.customer__title {
+  font: normal 700 32px/48px "Poppins";
+  color: #22343d;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.customer__text {
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.customer__text img {
+  margin-right: 30px;
+}
+.customer__text--mod {
+  text-align: left;
+  width: 350px;
+}
+.process {
+  position: relative;
+  padding: 90px 0;
+  text-align: center;
+  position: relative;
+}
+.process .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.process__bg {
+  position: absolute;
+  bottom: 132px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.process__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.process__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+.process__avatar img:nth-child(odd) {
+  margin-right: 16px;
+}
+.process__avatar img:nth-child(even) {
+  margin-left: 16px;
+}
+.process__title {
+  font: normal 700 32px/48px "Poppins";
+  margin-bottom: 16px;
+  color: #22343d;
+}
+.process__text {
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+}
+.process__text__first {
+  margin-bottom: 32px;
+}
+.process__text--mod {
+  padding: 15px 24px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+          box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+  border-radius: 26.5px;
+}
+.process .sign-up,
+.process .product .sign,
+.product .process .sign {
+  margin-top: 48px;
+}
+.strategies {
+  padding-bottom: 64px;
+  position: relative;
+}
+.strategies .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.strategies__bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.strategies__title {
+  text-align: center;
+  font: normal 700 32px/48px "Poppins";
+  color: #22343d;
+  margin-bottom: 8px;
+}
+.strategies__text {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  margin-bottom: 12px;
+}
+.strategies__text span {
+  font-weight: 600;
+}
+.strategies__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 32px;
+}
+.strategies__card {
+  margin-top: 32px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+.strategies__card img {
+  border-radius: 8px 8px 0px 0px;
+  border: none;
+  width: 100%;
+}
+.strategies__card .content {
+  padding: 24px;
+}
+.strategies__card h4 {
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343d;
+}
+.price {
+  padding: 90px 0;
+}
+.price .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price__title {
+  font: normal 700 32px/48px "Poppins";
+  color: #22343d;
+  margin-bottom: 8px;
+  line-height: 51px;
+}
+.price__text {
+  text-align: center;
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.price__row {
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px;
+}
+.price__card {
+  padding: 24px 60px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.price__card h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #02897a;
+  margin-bottom: 16px;
+  margin-right: 8px;
+}
+.price__card h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.price__card:hover {
+  background-color: #02897a;
+}
+.price__card:hover h1 {
+  color: #fff;
+}
+.price__card:hover .sign-up,
+.price__card:hover .product .sign,
+.product .price__card:hover .sign {
+  background-color: #fff;
+  color: #02897a;
+  border-radius: 8px;
+}
+.price__card:hover > * {
+  color: #fff;
+}
+.price__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.price__value p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1px;
+  color: #afafaf;
+  margin-bottom: 10px;
+}
+.price__value span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  color: #02897a;
+}
+.clients {
+  padding: 90px 0;
+}
+.clients .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.clients__title {
+  font: normal 700 32px/48px "Poppins";
+  color: #22343d;
+  margin-bottom: 8px;
+  line-height: 51px;
+}
+.clients .top-img {
+  margin-bottom: 16px;
+}
+.clients__text {
+  text-align: center;
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.clients__text--mod {
+  font-weight: 600;
+}
+.clients__row {
+  margin-top: 35px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 40px;
+}
+.clients__card {
+  text-align: left;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.clients__card p {
+  text-align: left;
+}
+.clients__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.clients__img p {
+  margin-bottom: 0;
+  margin-left: 14px;
+  font-weight: 600;
+}
+.clients__img p span {
+  color: #02897a;
+}
+.join {
+  padding: 90px 20px;
+}
+.join .container {
+  padding: 20px 50px;
+  border-radius: 32px;
+  background-color: #02897a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.join__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.join h1 {
+  text-align: center;
+  font: normal 700 32px/48px "Poppins";
+  color: #fff;
+  line-height: 48px;
+  font-size: 32px;
+}
+.join .sign-up,
+.join .product .sign,
+.product .join .sign {
+  margin-top: 60px;
+  background-color: #fff;
+  color: #02897a;
+}
+.join__bg {
+  width: 100%;
+}
+.join__bg img {
+  width: 100%;
+}
+.footer {
+  padding: 90px 0;
+  padding-top: 0;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.footer__logo a:first-child {
+  margin-right: 16px;
+}
+.footer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__icon img {
+  margin: 0 8px;
+}
+.footer__list {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__list h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #173a56;
+  margin-bottom: 16px;
+}
+.footer__list p {
+  font: normal 400 16px/28px "Poppins";
+  color: #22343d;
+  line-height: 35px;
+}
+.footer__sign {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 200px;
+}
+.footer__sign h4 {
+  width: 280px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22343d;
+}
+.footer__sign input {
+  width: 325px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #02897a;
+}
+@media (max-width: 950px) {
+  .navbar__menus {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    right: -1000px;
+    bottom: 0;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 999;
+    background-color: #02897a;
+  }
+  .navbar__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  .navbar__list .link {
+    font-size: 1.875rem;
+    line-height: 55px;
+    color: #fff;
+  }
+  .navbar .sign {
+    line-height: 70px;
+  }
+  .navbar .sign-in {
+    background-color: #fff;
+  }
+  .navbar .sign-up,
+  .navbar .product .sign,
+  .product .navbar .sign {
+    border-color: #fff;
+  }
+  .navbar .toggle-btn {
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .navbar .toggle-btn img {
+    width: 100%;
+  }
+  .navbar .close-btn {
+    position: absolute;
+    z-index: 9999;
+    top: 23px;
+    right: 25px;
+  }
+  .navbar .light-dark {
+    position: absolute;
+    top: 19px;
+    right: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .home {
+    padding-top: 225px;
+    text-align: left;
+  }
+  .home .container {
+    -ms-grid-columns: 1fr 33px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home__title {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 18px;
+  }
+  .home__btns {
+    margin-top: 45px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .product__title {
+    width: 509px;
+  }
+  .product__features {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 46px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 46px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .product .card {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .product .card p {
+    text-align: left;
+  }
+  .management,
+  .collaborative {
+    text-align: left;
+  }
+  .management .container,
+  .collaborative .container {
+    -ms-grid-columns: 1fr 94px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 94px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .management__title,
+  .collaborative__title {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 18px;
+  }
+  .customer {
+    padding-top: 90px;
+    text-align: left;
+  }
+  .customer .container {
+    -ms-grid-columns: 1fr 94px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 94px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customer__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .customer__text {
+    text-align: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customer__title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 18px;
+  }
+  .join {
+    padding: 90px 70px;
+  }
+  .join .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .join__content {
+    padding-top: 29px;
+    width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .join__content h1 {
+    text-align: left;
+  }
+  .join__bg {
+    width: 50%;
+  }
+  .footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer__list {
+    margin: 0;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer__sign {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .home {
+    padding-bottom: 40px;
+  }
+  .product__title {
+    width: 509px;
+  }
+  .product__features {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 46px 1fr 46px 1fr 46px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 46px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .product .card {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .product .card p {
+    text-align: left;
+  }
+  .management,
+  .customer,
+  .collaborative {
+    padding-top: 169px;
+  }
+  .management {
+    padding-top: 99px;
+  }
+  .collaborative {
+    padding-bottom: 169px;
+  }
+  .process {
+    padding: 150px 45px;
+    padding-bottom: 0;
+  }
+  .process__text__first {
+    width: 542px;
+  }
+  .process__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .process__avatar {
+    width: 405px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 45px;
+  }
+  .strategies {
+    padding-top: 150px;
+  }
+  .strategies__row {
+    -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .price {
+    padding: 150px 0;
+    padding-bottom: 0;
+  }
+  .price__row {
+    -ms-grid-columns: 1fr 71px 1fr 71px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 71px;
+  }
+  .clients {
+    padding: 150px 0;
+  }
+  .clients__row {
+    -ms-grid-columns: 1fr 64px 1fr 64px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 64px;
+  }
+  .join {
+    padding: 150px 0;
+    padding-top: 0;
+  }
+  .join .container {
+    max-width: 968px;
+  }
+}

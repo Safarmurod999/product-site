@@ -920,6 +920,9 @@ button {
   }
 }
 @media (min-width: 1024px) {
+  .home {
+    padding-bottom: 40px;
+  }
   .product__title {
     width: 509px;
   }
@@ -935,6 +938,15 @@ button {
   }
   .product .card p {
     text-align: left;
+  }
+  .management, .customer, .collaborative {
+    padding-top: 169px;
+  }
+  .management {
+    padding-top: 99px;
+  }
+  .collaborative {
+    padding-bottom: 169px;
   }
   .process {
     padding: 150px 45px;
@@ -974,6 +986,7 @@ button {
   }
   .join {
     padding: 150px 0;
+    padding-top: 0;
   }
   .join .container {
     max-width: 968px;
