@@ -50,9 +50,12 @@ html{
     *{
         background-color: $green !important;
     }
-    .sign-up{
-        background-color: $white !important;
-    }
+    // .sign-up{
+    //     background-color: $white !important;
+    // }
+    // .sign-up:hover {
+    //   color: $green !important;
+    // }
   }
 ul {
   list-style-type: none;
@@ -127,9 +130,9 @@ button {
     color: $white;
   }
   &-up:hover {
-    color: $green;
     border-color: #bcd0e5;
     background-color: $white;
+    color: $green !important;
   }
 }
 
@@ -163,12 +166,16 @@ button {
       color: $dark;
       font-weight: 600;
     }
+    .sign-up{
+      color: $white !important;
+    }
+    .sign-up:hover{
+      color: $green !important;
+    }
   }
+
   .toggle-btn {
     display: none;
-  }
-  .sign-up {
-    color: $white;
   }
 }
 .navbar-shrink {
@@ -715,12 +722,18 @@ button {
     }
     .sign {
       line-height: 70px;
-      &-in {
-        background-color: $white;
-      }
-      &-up {
+      &-up{
         border-color: $white;
       }
+      &-in{
+        color: $white;
+      }
+      &-in:hover{
+        border-color: $white;
+        background-color: $white;
+        color: $green;
+      }
+      
     }
     .toggle-btn {
       width: 25px;

@@ -50,9 +50,6 @@ html {
 .dark .price .container .price__row .price__card:hover * {
   background-color: #02897a !important;
 }
-.dark .price .container .price__row .price__card:hover .sign-up, .dark .price .container .price__row .price__card:hover .product .sign, .product .dark .price .container .price__row .price__card:hover .sign {
-  background-color: #fff !important;
-}
 
 ul {
   list-style-type: none;
@@ -121,9 +118,9 @@ button {
   color: #fff;
 }
 .sign-up:hover, .product .sign:hover {
-  color: #02897a;
   border-color: #bcd0e5;
   background-color: #fff;
+  color: #02897a !important;
 }
 
 .navbar {
@@ -170,11 +167,14 @@ button {
   color: #22343d;
   font-weight: 600;
 }
+.navbar__list .sign-up, .navbar__list .product .sign, .product .navbar__list .sign {
+  color: #fff !important;
+}
+.navbar__list .sign-up:hover, .navbar__list .product .sign:hover, .product .navbar__list .sign:hover {
+  color: #02897a !important;
+}
 .navbar .toggle-btn {
   display: none;
-}
-.navbar .sign-up, .navbar .product .sign, .product .navbar .sign {
-  color: #fff;
 }
 
 .navbar-shrink {
@@ -782,11 +782,16 @@ button {
   .navbar .sign {
     line-height: 70px;
   }
-  .navbar .sign-in {
-    background-color: #fff;
-  }
   .navbar .sign-up, .navbar .product .sign, .product .navbar .sign {
     border-color: #fff;
+  }
+  .navbar .sign-in {
+    color: #fff;
+  }
+  .navbar .sign-in:hover {
+    border-color: #fff;
+    background-color: #fff;
+    color: #02897a;
   }
   .navbar .toggle-btn {
     width: 25px;
